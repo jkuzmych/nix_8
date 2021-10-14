@@ -12,7 +12,6 @@ public class ProgramRun {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         String event;
         try {
-
             while (true) {
                 System.out.println("So, your choice is:");
                 if((event = reader.readLine()) == null)break;
