@@ -2,15 +2,15 @@ package hw1;
 
 import java.util.Scanner;
 public class task1 {
-
     public void run()
     {
         Scanner in = new Scanner(System.in);
         System.out.print("Input (alphanumerical string): ");
         String st= in.nextLine();
-
+//ggggggg
+        //5666
         String buff="0";
-        int sum = 0;
+        int sum = 1;
         for (int i = 0; i < st.length(); i++) {
             char ch = st.charAt(i);
             if (Character.isDigit(ch))
