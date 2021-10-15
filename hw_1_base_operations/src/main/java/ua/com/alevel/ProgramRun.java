@@ -13,7 +13,7 @@ public class ProgramRun {
         String event;
         try {
             while (true) {
-                System.out.println("So, your choice is:");
+                System.out.println("So, your choice is(1-3):");
                 if((event = reader.readLine()) == null)break;
                 switch (event) {
                     case "1" : {
