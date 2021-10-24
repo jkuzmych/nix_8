@@ -1,8 +1,10 @@
 package ua.com.alevel.sumofnumbers;
+
 import java.io.BufferedReader;
 import java.io.IOException;
 
 public class SumOfNumbers {
+
     public  void run(BufferedReader reader)throws IOException {
         while (true) {
             System.out.println();

@@ -7,6 +7,7 @@ import ua.com.alevel.amountofeachletter.AmountOfEachLetter;
 import ua.com.alevel.endoflessons.EndOfLessons;
 
 public class ProgramRun {
+
     public static void run() {
         preview();
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));

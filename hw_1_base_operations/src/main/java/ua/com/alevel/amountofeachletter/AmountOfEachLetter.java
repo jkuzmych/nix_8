@@ -5,6 +5,7 @@ import java.io.IOException;
 import java.util.Arrays;
 
 public class AmountOfEachLetter {
+
     public  void run(BufferedReader reader)throws IOException {
         while (true) {
             System.out.println();
