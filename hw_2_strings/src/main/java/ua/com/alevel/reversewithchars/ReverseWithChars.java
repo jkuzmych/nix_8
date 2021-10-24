@@ -1,8 +1,10 @@
 package ua.com.alevel.reversewithchars;
+
 import ua.com.alevel.reversestring.ReverseStringUtil;
 
 import java.io.BufferedReader;
 import java.io.IOException;
+
 public class ReverseWithChars {
     public static void run(BufferedReader reader) throws IOException {
         while (true) {

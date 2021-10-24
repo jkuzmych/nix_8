@@ -1,4 +1,5 @@
 package ua.com.alevel;
+
 import ua.com.alevel.ReverseStringMenu;
 
 public class ReverseStringMain {

@@ -1,7 +1,9 @@
 package ua.com.alevel;
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+
 import ua.com.alevel.usualreverse.UsualReverse;
 import ua.com.alevel.reversewithsubword.ReverseWithSubword;
 import ua.com.alevel.reversewithindexes.ReverseWithIndexes;
@@ -15,29 +17,35 @@ public class ReverseStringMenu {
         try {
             while (true) {
                 System.out.println("So, your choice is(1-4):");
-                if((event = reader.readLine()) == null)break;
+                if ((event = reader.readLine()) == null) break;
                 switch (event) {
-                    case "1" : {
-                       UsualReverse.run(reader);
-                    } break;
-                    case "2" : {
+                    case "1": {
+                        UsualReverse.run(reader);
+                    }
+                    break;
+                    case "2": {
                         ReverseWithSubword.run(reader);
-                    } break;
-                    case "3" : {
+                    }
+                    break;
+                    case "3": {
                         ReverseWithIndexes.run(reader);
-                    } break;
-                    case "4" : {
+                    }
+                    break;
+                    case "4": {
                         ReverseWithChars.run(reader);
-                    } break;
-                    case "0" : {
+                    }
+                    break;
+                    case "0": {
                         System.exit(0);
-                    } break;
+                    }
+                    break;
                 }
             }
         } catch (IOException e) {
             e.printStackTrace();
         }
     }
+
     private static void preview() {
         System.out.println("To make usual reverse print 1");//save word order?
         System.out.println("To make reverse of subword in the string print 2");

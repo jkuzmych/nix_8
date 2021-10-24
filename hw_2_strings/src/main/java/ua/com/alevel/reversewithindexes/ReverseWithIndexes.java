@@ -13,20 +13,17 @@ public class ReverseWithIndexes {
             System.out.print("Enter your string-> ");
             String src = reader.readLine();
             if (src.compareTo("0") == 0) break;
-            int firstindex=0, lastindex=0;
-
+            int firstindex = 0, lastindex = 0;
             System.out.print("Enter first index-> ");
-            String f=reader.readLine();
+            String f = reader.readLine();
             System.out.print("Enter second index-> ");
-            String l=reader.readLine();
-            if(Character.isDigit((l.charAt(0)))||(Character.isDigit((f.charAt(0))))) {
-                firstindex=Integer.parseInt(f);
+            String l = reader.readLine();
+            if (Character.isDigit((l.charAt(0))) || (Character.isDigit((f.charAt(0))))) {
+                firstindex = Integer.parseInt(f);
                 lastindex = Integer.parseInt(l);
-            }else System.out.println(src+"indexes are not digits");
-
+            } else System.out.println(src + "indexes are not digits");
             System.out.print("Save word order or not? true/false-> ");
             Boolean full = Boolean.parseBoolean(reader.readLine());
-
             System.out.println("result: " + ReverseStringUtil.reverse(src, firstindex, lastindex, full));
         }
     }
