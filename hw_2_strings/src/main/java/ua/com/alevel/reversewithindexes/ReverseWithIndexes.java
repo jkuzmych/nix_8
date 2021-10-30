@@ -5,7 +5,6 @@ import ua.com.alevel.reversestring.ReverseStringUtil;
 import java.io.BufferedReader;
 import java.io.IOException;
 
-
 public class ReverseWithIndexes {
     public static void run(BufferedReader reader) throws IOException {
         while (true) {

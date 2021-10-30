@@ -1,13 +1,13 @@
 package ua.com.alevel;
 
+import ua.com.alevel.reversewithchars.ReverseWithChars;
+import ua.com.alevel.reversewithindexes.ReverseWithIndexes;
+import ua.com.alevel.reversewithsubword.ReverseWithSubword;
+import ua.com.alevel.usualreverse.UsualReverse;
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-
-import ua.com.alevel.usualreverse.UsualReverse;
-import ua.com.alevel.reversewithsubword.ReverseWithSubword;
-import ua.com.alevel.reversewithindexes.ReverseWithIndexes;
-import ua.com.alevel.reversewithchars.ReverseWithChars;
 
 public class ReverseStringMenu {
     public static void run() {

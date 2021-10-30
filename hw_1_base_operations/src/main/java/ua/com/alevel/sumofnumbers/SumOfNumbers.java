@@ -5,13 +5,13 @@ import java.io.IOException;
 
 public class SumOfNumbers {
 
-    public  void run(BufferedReader reader)throws IOException {
+    public void run(BufferedReader reader) throws IOException {
         while (true) {
             System.out.println();
             System.out.print("Input (alphanumerical string): ");
             String st = reader.readLine();
 
-            if(st.compareTo("0")==0)break;
+            if (st.compareTo("0") == 0) break;
 
             String buff = "0";
             int sum = 0;

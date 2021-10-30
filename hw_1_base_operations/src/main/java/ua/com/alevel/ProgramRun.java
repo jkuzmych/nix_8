@@ -1,10 +1,12 @@
 package ua.com.alevel;
+
+import ua.com.alevel.amountofeachletter.AmountOfEachLetter;
+import ua.com.alevel.endoflessons.EndOfLessons;
+import ua.com.alevel.sumofnumbers.SumOfNumbers;
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import ua.com.alevel.sumofnumbers.SumOfNumbers;
-import ua.com.alevel.amountofeachletter.AmountOfEachLetter;
-import ua.com.alevel.endoflessons.EndOfLessons;
 
 public class ProgramRun {
 
@@ -15,20 +17,24 @@ public class ProgramRun {
         try {
             while (true) {
                 System.out.println("So, your choice is(1-3):");
-                if((event = reader.readLine()) == null)break;
+                if ((event = reader.readLine()) == null) break;
                 switch (event) {
-                    case "1" : {
+                    case "1": {
                         new SumOfNumbers().run(reader);
-                    } break;
-                    case "2" : {
+                    }
+                    break;
+                    case "2": {
                         new AmountOfEachLetter().run(reader);
-                    } break;
-                    case "3" : {
+                    }
+                    break;
+                    case "3": {
                         new EndOfLessons().run(reader);
-                    } break;
-                    case "0" : {
+                    }
+                    break;
+                    case "0": {
                         System.exit(0);
-                    } break;
+                    }
+                    break;
                 }
             }
         } catch (IOException e) {
