@@ -28,9 +28,9 @@ public class KnightMove {
             if (checkPossibilityOfMove(Integer.parseInt(current[0]), Integer.parseInt(current[1]), Integer.parseInt(wanted[0]), Integer.parseInt(wanted[1])))
                 System.out.println("Move is possible");
             else System.out.println("Move is impossible");
-            System.out.println("Select Q/q to break");
+            System.out.println("Select 0 to break");
             src = reader.readLine();
-            if (src.compareTo("Q") == 0 || src.compareTo("q") == 0) break;
+            if (src.compareTo("0") == 0 || src.compareTo("q") == 0) break;
         }
     }
 

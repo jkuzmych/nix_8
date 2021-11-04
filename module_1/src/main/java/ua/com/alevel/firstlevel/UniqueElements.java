@@ -26,11 +26,12 @@ public class UniqueElements {
             }
             System.out.println();
             System.out.println("Amount of unique elements is " + amountOfUniqueElements(array));
-            System.out.println("Select Q/q to break");
-            String src=reader.readLine();
-            if (src.compareTo("Q") == 0 || src.compareTo("q") == 0) break;
+            System.out.println("Select 0 to break");
+            String src = reader.readLine();
+            if (src.compareTo("0") == 0 || src.compareTo("q") == 0) break;
         }
     }
+
     public static int amountOfUniqueElements(int[] array) {
         int amount = 0;
         boolean b;
