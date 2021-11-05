@@ -11,12 +11,10 @@ public class BinaryTreeLength {
             System.out.println("Enter the binary tree->");
             src = reader.readLine();
             String[] array = src.split(" ");
-            ;
-            Node tree = new Node(0);
-            for (int i = 0; i < array.length; i++) {
+            Node tree = new Node(Integer.parseInt(array[0]));
+            for (int i = 1; i < array.length; i++) {
                 setTree(Integer.parseInt(array[i]), tree);
             }
-            getTree(tree);
             System.out.println(tree);
             System.out.println("Tree depth is " + maxDepth(tree));
             System.out.println("Select 0 to break");
@@ -50,21 +48,10 @@ public class BinaryTreeLength {
         }
     }
 
-    void getTree(Node tree) {
-        if (tree.left != null && tree.right != null) {
-            getTree(tree.left);
-            System.out.print(tree.value + " ");
-            getTree(tree.left);
-        }
-    }
-
     public int maxDepth(Node root) {
-        if (root == null)
-            return 0;
-
+        if (root == null) return 0;
         int nleft = maxDepth(root.left);
         int nright = maxDepth(root.right);
-
         return nleft > nright ? nleft + 1 : nright + 1;
     }
 

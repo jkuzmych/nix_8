@@ -2,6 +2,7 @@ package ua.com.alevel;
 
 import ua.com.alevel.controllers.FirstLevelController;
 import ua.com.alevel.controllers.SecondLevelController;
+import ua.com.alevel.thirdlevel.Life;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -23,6 +24,10 @@ public class ModuleRun {
                     break;
                     case "2": {
                         SecondLevelController.run(reader);
+                    }
+                    break;
+                    case "3": {
+                        new Life().run(reader);
                     }
                     break;
                     case "0": {

@@ -37,6 +37,7 @@ public class SecondLevelController {
 
     private static void preview() {
         System.out.println("To start string validation task select 1");
+        System.out.println("To start binary tree task select 2");
         System.out.println("To exit print 0");
         System.out.println();
     }
