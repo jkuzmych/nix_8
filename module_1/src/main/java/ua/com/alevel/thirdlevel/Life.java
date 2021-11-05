@@ -1,5 +1,5 @@
 package ua.com.alevel.thirdlevel;
-
+import java.io.IOException;
 import java.io.BufferedReader;
 import java.io.IOException;
 
@@ -18,7 +18,7 @@ public class Life {
             width = Integer.parseInt(reader.readLine());
             setBoard();
             while (true) {
-                System.out.println("*-live, o-dead");
+                System.out.println("o-live, .-dead");
                 printBoard();
                 System.out.println();
                 if (nextConfiguration()) printBoard();
@@ -49,8 +49,8 @@ public class Life {
     private void printBoard() {
         for (int i = 0; i < height; i++) {
             for (int j = 0; j < width; j++) {
-                if (board[i][j] == 1) System.out.print("* ");
-                else System.out.print("o ");
+                if (board[i][j] == 1) System.out.print("o ");
+                else System.out.print(". ");
             }
             System.out.println();
         }

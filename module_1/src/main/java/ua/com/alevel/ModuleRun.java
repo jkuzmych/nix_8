@@ -43,6 +43,8 @@ public class ModuleRun {
 
     private static void preview() {
         System.out.println("To check first level select 1");
+        System.out.println("To check second level select 2");
+        System.out.println("To check third level select 3");
         System.out.println("To exit print 0");
         System.out.println();
     }

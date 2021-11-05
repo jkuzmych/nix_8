@@ -10,15 +10,25 @@ public class UniqueElements {
             int size;
             int[] array;
             System.out.println("Enter quantity of the elements");
-            size = Integer.parseInt(reader.readLine());
+            try {
+                size = Integer.parseInt(reader.readLine());
+            }catch (Exception e) {
+                System.out.println("Could not parse input.");
+                break;
+            }
             if (size <= 0) {
                 System.out.println("Incorrect value entered");
-                return;
+                break;
             }
             array = new int[size];
             for (int i = 0; i < size; i++) {
                 System.out.println("Enter element №" + (i + 1));
-                array[i] = Integer.parseInt(reader.readLine());
+                try {
+                    array[i] = Integer.parseInt(reader.readLine());
+                }catch (Exception e) {
+                    System.out.println("Could not parse input.");
+                    return;
+                }
             }
             System.out.print("Your array->");
             for (int i = 0; i < size; i++) {
