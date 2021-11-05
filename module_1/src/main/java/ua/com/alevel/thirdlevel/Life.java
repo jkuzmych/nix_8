@@ -12,10 +12,18 @@ public class Life {
         while (true) {
             System.out.println();
             String src;
-            System.out.println("Enter the height of new world");
-            height = Integer.parseInt(reader.readLine());
             System.out.println("Enter the width of new world");
+            try {
+                height = Integer.parseInt(reader.readLine());
+            }catch(Exception e){
+                System.out.println("Invalid data");
+            }
+            System.out.println("Enter the height of new world");
+            try {
             width = Integer.parseInt(reader.readLine());
+            }catch(Exception e){
+            System.out.println("Invalid data");
+             }
             setBoard();
             while (true) {
                 System.out.println("o-live, .-dead");
