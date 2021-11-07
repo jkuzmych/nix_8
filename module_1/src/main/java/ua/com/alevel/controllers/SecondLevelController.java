@@ -8,6 +8,7 @@ import java.io.BufferedReader;
 import java.io.IOException;
 
 public class SecondLevelController {
+
     public static void run(BufferedReader reader) {
         preview();
         String event;

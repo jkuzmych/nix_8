@@ -6,6 +6,7 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class KnightMove {
+
     public static void run(BufferedReader reader) throws IOException {
         while (true) {
             System.out.println();

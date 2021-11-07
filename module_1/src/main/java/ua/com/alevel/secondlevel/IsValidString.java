@@ -5,6 +5,7 @@ import java.io.IOException;
 import java.util.Stack;
 
 public class IsValidString {
+
     public static void run(BufferedReader reader) throws IOException {
         while (true) {
             System.out.println();
@@ -23,7 +24,7 @@ public class IsValidString {
 
     public static boolean stringValidator(String str) {
         if (str == null) return true;
-        Stack<Character> stack = new Stack<Character>();
+        Stack<Character> stack = new Stack<>();
         for (char bracket : str.toCharArray()) {
             if (bracket == '(' || bracket == '[' || bracket == '{') {
                 stack.push(bracket);

@@ -4,6 +4,7 @@ import java.io.BufferedReader;
 import java.io.IOException;
 
 public class UniqueElements {
+
     public static void run(BufferedReader reader) throws IOException {
         while (true) {
             System.out.println();
@@ -12,7 +13,7 @@ public class UniqueElements {
             System.out.println("Enter quantity of the elements");
             try {
                 size = Integer.parseInt(reader.readLine());
-            }catch (Exception e) {
+            } catch (Exception e) {
                 System.out.println("Could not parse input.");
                 break;
             }
@@ -25,7 +26,7 @@ public class UniqueElements {
                 System.out.println("Enter element №" + (i + 1));
                 try {
                     array[i] = Integer.parseInt(reader.readLine());
-                }catch (Exception e) {
+                } catch (Exception e) {
                     System.out.println("Could not parse input.");
                     return;
                 }

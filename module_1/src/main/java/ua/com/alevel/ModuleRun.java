@@ -9,6 +9,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 
 public class ModuleRun {
+
     public static void run() {
         preview();
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));

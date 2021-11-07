@@ -4,6 +4,7 @@ import java.io.BufferedReader;
 import java.io.IOException;
 
 public class TriangleArea {
+
     public static void run(BufferedReader reader) throws IOException {
         while (true) {
             System.out.println();

@@ -1,9 +1,11 @@
 package ua.com.alevel.thirdlevel;
+
 import java.io.IOException;
 import java.io.BufferedReader;
 import java.io.IOException;
 
 public class Life {
+
     private int[][] board;
     private int height;
     private int width;
@@ -15,15 +17,15 @@ public class Life {
             System.out.println("Enter the width of new world");
             try {
                 height = Integer.parseInt(reader.readLine());
-            }catch(Exception e){
+            } catch (Exception e) {
                 System.out.println("Invalid data");
             }
             System.out.println("Enter the height of new world");
             try {
-            width = Integer.parseInt(reader.readLine());
-            }catch(Exception e){
-            System.out.println("Invalid data");
-             }
+                width = Integer.parseInt(reader.readLine());
+            } catch (Exception e) {
+                System.out.println("Invalid data");
+            }
             setBoard();
             while (true) {
                 System.out.println("o-live, .-dead");
