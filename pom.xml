@@ -13,6 +13,7 @@
         <module>hw_2_strings</module>
         <module>hw_3_start_oop</module>
         <module>module_1</module>
+        <module>hw_4_logs_and_tests</module>
     </modules>
 
     <packaging>pom</packaging>
