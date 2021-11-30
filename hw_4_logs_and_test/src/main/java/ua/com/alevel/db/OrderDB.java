@@ -12,6 +12,7 @@ public class OrderDB {
     private final DynamicArray orders;
     Logger loggerInfo = LoggerFactory.getLogger("info");
     Logger loggerWarn = LoggerFactory.getLogger("info");
+
     private OrderDB() {
         orders = new DynamicArray();
     }
