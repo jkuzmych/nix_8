@@ -274,7 +274,7 @@ public class MathSet {
         return b1.compareTo(b2) > 0;
     }
 
-    private boolean contains(Number n) {
+    public boolean contains(Number n) {
         if (mathSet != null) {
             for (int i = 0; i < mathSet.length; i++) {
                 if (n == null) break;

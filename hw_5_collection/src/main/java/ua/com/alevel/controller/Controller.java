@@ -5,6 +5,7 @@ import ua.com.alevel.mathset.MathSet;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.util.NoSuchElementException;
 
 public class Controller {
     MathSet mathSet = new MathSet();
@@ -107,17 +108,14 @@ public class Controller {
             ind1 = Integer.parseInt(reader.readLine());
             System.out.println("enter the last index");
             ind2 = Integer.parseInt(reader.readLine());
+            if(ind1>mathSet.getSize() || ind2> mathSet.getSize() || ind1>ind2) throw new ArrayIndexOutOfBoundsException();
         } catch (NumberFormatException | IOException e) {
             System.out.println("invalid input");
+        }catch (ArrayIndexOutOfBoundsException e) {
+            System.out.println("index out of bounds, so result is null");
         }
         mathSet.cut(ind1, ind2);
         System.out.println("Result of cut:" + mathSet);
-    }
-
-    private void toArrayFromTo(BufferedReader reader) {
-    }
-
-    private void toArray(BufferedReader reader) {
     }
 
     private void getMedian() {
@@ -145,8 +143,11 @@ public class Controller {
         try {
             System.out.println("enter the index");
             ind = Integer.parseInt(reader.readLine());
+            if(ind>mathSet.getSize()) throw new ArrayIndexOutOfBoundsException();
         } catch (NumberFormatException | IOException e) {
             System.out.println("invalid input");
+        }catch (ArrayIndexOutOfBoundsException e) {
+            System.out.println("index out of bounds, so result is null");
         }
         System.out.println("Value by index:" + mathSet.get(ind));
     }
@@ -156,8 +157,11 @@ public class Controller {
         try {
             System.out.println("enter the start value");
             v = Integer.parseInt(reader.readLine());
+            if(!mathSet.contains(v)) throw new NoSuchElementException();
         } catch (NumberFormatException | IOException e) {
             System.out.println("invalid input");
+        }catch(NoSuchElementException e){
+            System.out.println("no such value, so whole mathset sorted");
         }
         mathSet.sortAsc(v);
         System.out.println("Result of desc sorting:" + mathSet);
@@ -170,8 +174,11 @@ public class Controller {
             ind1 = Integer.parseInt(reader.readLine());
             System.out.println("enter the last index");
             ind2 = Integer.parseInt(reader.readLine());
+            if(ind1>mathSet.getSize() || ind2> mathSet.getSize() || ind1>ind2) throw new ArrayIndexOutOfBoundsException();
         } catch (NumberFormatException | IOException e) {
             System.out.println("invalid input");
+        }catch (ArrayIndexOutOfBoundsException e) {
+            System.out.println("index out of bounds, so result is null");
         }
         mathSet.sortAsc(ind1, ind2);
         System.out.println("Result of asc sorting:" + mathSet);
@@ -187,8 +194,11 @@ public class Controller {
         try {
             System.out.println("enter the start value");
             v = Integer.parseInt(reader.readLine());
+            if(!mathSet.contains(v)) throw new NoSuchElementException();
         } catch (NumberFormatException | IOException e) {
             System.out.println("invalid input");
+        }catch(NoSuchElementException e){
+            System.out.println("no such value, so whole mathset sorted");
         }
         mathSet.sortDesc(v);
         System.out.println("Result of desc sorting:" + mathSet);
@@ -202,8 +212,11 @@ public class Controller {
             ind1 = Integer.parseInt(reader.readLine());
             System.out.println("enter the last index");
             ind2 = Integer.parseInt(reader.readLine());
+            if(ind1>mathSet.getSize() || ind2> mathSet.getSize() || ind1>ind2) throw new ArrayIndexOutOfBoundsException();
         } catch (NumberFormatException | IOException e) {
             System.out.println("invalid input");
+        }catch (ArrayIndexOutOfBoundsException e) {
+            System.out.println("index out of bounds, so result is null");
         }
         mathSet.sortDesc(ind1, ind2);
         System.out.println("Result of desc sorting:" + mathSet);
