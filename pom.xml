@@ -15,6 +15,9 @@
         <module>module_1</module>
         <module>hw_4_logs_and_test</module>
         <module>hw_5_collection</module>
+        <module>calendar</module>
+        <module>hw_6_calendar</module>
+        <module>module_2</module>
     </modules>
 
     <packaging>pom</packaging>
