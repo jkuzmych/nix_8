@@ -4,7 +4,6 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 
 public class Controller {
@@ -42,8 +41,8 @@ public class Controller {
     }
 
     private void mainOperations(String position, BufferedReader reader) {
-        System.out.println("current input template:"+date.getInputTemplate());
-        System.out.println("current input template:"+date.getOutputTemplate());
+        System.out.println("current input template:" + date.getInputTemplate());
+        System.out.println("current input template:" + date.getOutputTemplate());
         switch (position) {
             case "1" -> showInputOutputTemplates();
             case "2" -> setInputTemplate(reader);

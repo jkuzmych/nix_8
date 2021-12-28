@@ -198,7 +198,7 @@ public class MyDate {
         String separator = "";
         if (arrayOfPartsDate[0].contains("-")) {
             separator = "-";
-        }else separator = "/";
+        } else separator = "/";
         String[] subStringsPartOfDate = arrayOfPartsDate[0].split(separator);
         for (int i = 0; i < 3; i++) {
             switch (subStringsPartOfDate[i]) {
